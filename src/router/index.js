@@ -1,14 +1,36 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-
+import register from '../views/registration.vue'
+import borrowbooks from '../views/borrowbooks.vue'
+import addbooks from '../views/addbooks.vue';
+import viewborrowers from '../views/viewborrowers.vue';
 Vue.use(VueRouter);
-
 const routes = [
   {
-    path: "/",
+    path: "/home",
     name: "Home",
     component: Home
+  },
+  {
+    path: "/",
+    name: "register",
+    component: register
+  },
+  {
+    path: "/borrowbooks",
+    name: "borrowbooks",
+    component: borrowbooks
+  },
+  {
+    path: "/addbooks",
+    name: "addbooks",
+    component: addbooks
+  },
+  {
+    path: "/viewborrowers",
+    name: "viewborrowers",
+    component: viewborrowers
   },
   {
     path: "/about",
